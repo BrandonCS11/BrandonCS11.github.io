@@ -77,8 +77,12 @@
             background-repeat: no-repeat;
             }
         </style>
+        
+
         <script>
-            console.log("Hello world!");
+            function goBack() {
+            window.history.back();
+        }
         </script>
     </head>
     <body background="img/kingdom.jpg" class="background">
@@ -107,6 +111,7 @@
                 <img src="img/joker.jpg" width="170" height="250" class="joker_img">
                 <font size="+3"> Joker </font>
                 <p>A random card has appeared </p>
+                <button onclick="goBack()">Go Back</button>
             </div>
         </font>
     </body>
